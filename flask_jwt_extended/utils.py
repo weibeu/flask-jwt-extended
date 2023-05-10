@@ -101,7 +101,7 @@ def get_current_user() -> Any:
 
 
 def decode_token(
-    encoded_token: str, csrf_value: Optional[str] = None, allow_expired: bool = False
+    encoded_token: str, csrf_value: Optional[str] = None, allow_expired: bool = True
 ) -> dict:
     """
     Returns the decoded token (python dict) from an encoded JWT. This does all
